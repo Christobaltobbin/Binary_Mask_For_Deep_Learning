@@ -5,6 +5,11 @@ import matplotlib.pyplot as plt
 import os
 import numpy as np
 
+# Function to create directories
+def create_dir(directory_path):
+    os.makedirs(directory_path, exist_ok=True)
+        
+
 # Define the folder path
 def create_binary_mask(input_path, output_path):
     
